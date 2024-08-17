@@ -27,7 +27,7 @@ total_average = float(total_inches / total_months)
 
 print()
 print('There are {} months in the {} year period'.format(total_months, num_years))
-print('The total amount of rain that fell in the {} year period was {} inches'.format(num_years, total_inches))
+print('The total amount of rain that fell in the {} year period was {:.2f} inches'.format(num_years, total_inches))
 print('The average monthly rainfall over the {} year period was {:.2f} inches'.format(num_years, total_average))
 print('The average rainfall for each month over the {} year period was:'.format(num_years))
 
@@ -35,6 +35,7 @@ for month in rainfall:
     rainfall_month = sum(rainfall[month])
     avg_rainfall_month = rainfall_month / len(rainfall[month])
     print('{} : {:.2f} inches'.format(month, avg_rainfall_month))
+
 
 # Part 2: This program calculates the number of points a user has earned based on how many books they have purchased
 
